@@ -1,0 +1,44 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="client">
+      <h2 data-cy="clientDetailsHeading"><span jhiTranslate="jhipsterprojectApp.client.detail.title">Client</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ client.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterprojectApp.client.clientName">Client Name</span></dt>
+        <dd>
+          <span>{{ client.clientName }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterprojectApp.client.clientCountry">Client Country</span></dt>
+        <dd>
+          <span>{{ client.clientCountry }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterprojectApp.client.clientCompany">Client Company</span></dt>
+        <dd>
+          <span>{{ client.clientCompany }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterprojectApp.client.companyUrl">Company Url</span></dt>
+        <dd>
+          <span>{{ client.companyUrl }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterprojectApp.client.companyWebsite">Company Website</span></dt>
+        <dd>
+          <span>{{ client.companyWebsite }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+    </div>
+  </div>
+</div>

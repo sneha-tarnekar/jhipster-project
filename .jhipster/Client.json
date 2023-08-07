@@ -1,0 +1,34 @@
+{
+  "changelogDate": "20230807104605",
+  "databaseType": "mongodb",
+  "dto": "no",
+  "entityTableName": "client",
+  "fields": [
+    {
+      "fieldName": "clientName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "clientCountry",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "clientCompany",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "companyUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "companyWebsite",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Client",
+  "pagination": "pagination",
+  "readOnly": true,
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
